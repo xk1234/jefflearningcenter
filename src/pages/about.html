@@ -1,0 +1,76 @@
+---
+layout: 'base.html'
+description: "Our tuition center provides education to the kids in a fun and enjoyable way"
+metaTitle: 'Jeff Tuition Center - About'
+tagTitle: 'About'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/about.css'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  {% image './src/images/book.jpg', 'book', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/books.avif', 'book', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/online.avif', 'study', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h2 class="cs-title">Our Story</h2>
+      <p class="cs-text">
+        At Jeff Tuition, we believe in the potential of every child. We empower students with a deep-rooted passion for learning and help them achieve their full potential. Our teachers hold themselves accountable to make each and every lesson a solution-driven experience by keeping track of all student progress on individualized plans, while providing targeted one-on-one interventions as needed.
+      </p>
+      <p class="cs-text">
+        Our tutors are experts at teaching. With our comprehensive curriculum and easy-to-follow lesson plans, your child will be on the path to success in no time. We use games and quizzes to make learning fun, even for those who hate doing their homework.
+      </p>
+      <p class="cs-text">
+        At the end of the day, our mission is simple -- to help every child achieve their full potential. Join us on this exciting journey of learning and discovery!
+      </p>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          Our expert teachers will guide your child to success in all school subjects and help them discover their true passion. It’s never too late or too early to start planning for your child’s future.
+        </p>
+        <span class="cs-name">Fiona Wang</span>
+        <span class="cs-job">Founder</span>
+        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+      </div>
+      <a href="" class="button-solid">More About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">
+      Get Started
+    </h2>
+    <p>
+      Want to learn and start improving your skills? Come in to take classes and meet our great teachers
+    </p>
+    <a href="/contact" class="button-solid">Book A Class</a>
+  </div>
+  {% image './src/images/book.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>

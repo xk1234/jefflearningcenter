@@ -820,3 +820,8 @@
     background: #061623;
   }
 }
+
+img {
+  width: 100%;
+  height: auto;
+}

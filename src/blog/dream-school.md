@@ -11,7 +11,7 @@ tags:
   - jeff tuition center
   - tutoring
   - psle
-image: /images/classroomls-1920w.webp
+image: /images/learningbg2-1920w.webp
 imageAlt: classroom
 ---
 Javier had always been a good student, but as he entered his 3rd year of secondary school, he began to struggle. His grades began to slip, and he found himself getting Cs in subjects he had once excelled in. Javier's parents were worried and decided to enroll him in Jeff Tuition's tutoring program.

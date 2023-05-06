@@ -825,3 +825,19 @@ img {
   width: 100%;
   height: auto;
 }
+
+
+table.schedule {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 70px;
+}
+table.schedule th, table.schedule td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: white;
+}
+table.schedule th {
+    background-color: #f2f2f2;
+}

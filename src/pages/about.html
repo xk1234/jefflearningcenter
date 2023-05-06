@@ -1,14 +1,14 @@
 ---
-layout: 'base.html'
+layout: "base.html"
 description: "Our tuition center provides education to the kids in a fun and enjoyable way"
-metaTitle: 'Jeff Tuition Center - About'
-tagTitle: 'About'
-preloadImg: '/images/cabinets2-1920w.webp'
-preloadCSS: '/css/about.css'
-permalink: 'about/'
+metaTitle: "Jeff Tuition Center - About"
+tagTitle: "About"
+preloadImg: "/images/cabinets2-1920w.webp"
+preloadCSS: "/css/about.css"
+permalink: "about/"
 eleventyNavigation:
-    key: About Us
-    order: 200
+  key: About Us
+  order: 200
 ---
 
 <!-- Enter html code below -->
@@ -19,7 +19,8 @@ eleventyNavigation:
 
 <section id="int-hero">
   <h1 id="home-h">About Us</h1>
-  {% image './src/images/book.jpg', 'book', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/book.jpg', 'book', '', 'lazy', '(max-width: 850px)
+  850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
@@ -30,32 +31,243 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/learningbg3.jpeg', 'book', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/boyreading.jpeg', 'study', 'cs-picture cs-picture2', 'lazy'%}
+      {% image './src/images/learningbg3.jpeg', 'book', 'cs-picture
+      cs-picture1', 'lazy'%} {% image './src/images/boyreading.jpeg', 'study',
+      'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
     <div class="cs-right">
       <h2 class="cs-title">Our Story</h2>
       <p class="cs-text">
-        At Jeff Tuition, we believe in the potential of every child. We empower students with a deep-rooted passion for learning and help them achieve their full potential. Our teachers hold themselves accountable to make each and every lesson a solution-driven experience by keeping track of all student progress on individualized plans, while providing targeted one-on-one interventions as needed.
+        At Jeff Tuition, we believe in the potential of every child. We empower
+        students with a deep-rooted passion for learning and help them achieve
+        their full potential. Our teachers hold themselves accountable to make
+        each and every lesson a solution-driven experience by keeping track of
+        all student progress on individualized plans, while providing targeted
+        one-on-one interventions as needed.
       </p>
       <p class="cs-text">
-        Our tutors are experts at teaching. With our comprehensive curriculum and easy-to-follow lesson plans, your child will be on the path to success in no time. We use games and quizzes to make learning fun, even for those who hate doing their homework.
+        Our tutors are experts at teaching. With our comprehensive curriculum
+        and easy-to-follow lesson plans, your child will be on the path to
+        success in no time. We use games and quizzes to make learning fun, even
+        for those who hate doing their homework.
       </p>
       <p class="cs-text">
-        At the end of the day, our mission is simple -- to help every child achieve their full potential. Join us on this exciting journey of learning and discovery!
+        At the end of the day, our mission is simple -- to help every child
+        achieve their full potential. Join us on this exciting journey of
+        learning and discovery!
       </p>
       <div class="cs-flex-group">
         <p class="cs-flex-p">
-          Our expert teachers will guide your child to success in all school subjects and help them discover their true passion. It’s never too late or too early to start planning for your child’s future.
+          Our expert teachers will guide your child to success in all school
+          subjects and help them discover their true passion. It’s never too
+          late or too early to start planning for your child’s future.
         </p>
         <span class="cs-name">Fiona Wang</span>
         <span class="cs-job">Founder</span>
-        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
+        <img
+          class="cs-quote-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+          alt="gavel"
+          width="136"
+          height="77"
+        />
       </div>
       <a href="" class="button-solid">More About Us</a>
     </div>
   </div>
+  <table class="schedule">
+    <tr>
+      <th>授课老师</th>
+      <th>年级</th>
+      <th>课程</th>
+      <th colspan="3">上课时间</th>
+      <th>课程特点</th>
+      <th>老师介绍</th>
+    </tr>
+    <tr>
+      <td rowspan="7">Ms Ho</td>
+      <td>P2</td>
+      <td>GEP英文</td>
+      <td>周六4:30pm</td>
+      <td>周一7pm</td>
+      <td>周二5pm</td>
+      <td rowspan="7">
+        1.课程设计别出心裁，新颖独创；<br />
+        2.上课形式活泼；鼓励孩子多说，多练，多交流；<br />
+        3.不拘泥于所谓的"标准答案"。
+      </td>
+      <td rowspan="7">
+        1.拥有新加坡国立大学和国立教育学院双重学位;<br />2.找出每个孩子的闪光点并运用到华文学习中；<br />3.有独特的方法和技巧对华文的写作理解。
+      </td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>GEP英文</td>
+      <td>周六2:30pm</td>
+      <td>周一5pm</td>
+      <td>周四4:30pm</td>
+    </tr>
+    <tr>
+      <td>P4</td>
+      <td>英文培优班</td>
+      <td>周日11am</td>
+      <td>周二7pm</td>
+      <td>周四6:30pm</td>
+    </tr>
+    <tr>
+      <td>P5</td>
+      <td>英文写作</td>
+      <td>周日2pm</td>
+      <td>~</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>P5</td>
+      <td>英文</td>
+      <td>周三7pm</td>
+      <td>~</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>P6</td>
+      <td>英文</td>
+      <td>周日4pm</td>
+      <td>~</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>P6</td>
+      <td>英文写作</td>
+      <td>周三5pm</td>
+      <td>~</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Ms Lim</td>
+      <td>P2</td>
+      <td>GEP数学</td>
+      <td>周五5pm</td>
+      <td>~</td>
+      <td>~</td>
+      <td rowspan="3">
+        1.讲课内容深入浅出，直击要点； <br />2.善于总结知识要点和解题思路；
+        <br />3.帮助学生查缺补漏。
+      </td>
+      <td rowspan="3">
+        1.知名补习中心数学部负责人； <br />2.补习经验功底杂实，逻辑思维严密；
+        <br />3.帮助孩子们找到弱点，重点突出。
+      </td>
+    </tr>
+    <tr>
+      <td>P3</td>
+      <td>GEP数学</td>
+      <td>周一7pm</td>
+      <td>~</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>P4</td>
+      <td>数学</td>
+      <td>周一5pm</td>
+      <td>~</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>Raymond</td>
+      <td>P4</td>
+      <td>英文</td>
+      <td>周三3pm</td>
+      <td>~</td>
+      <td>~</td>
+      <td>
+        1.讲课生动有趣，带动孩子的积极性；
+        <br />2.擅长对问题抽丝剥茧的分析；激发孩子对语言的兴趣；
+        <br />3.引导孩子进行结构性思考，全方位的学习
+      </td>
+      <td>
+        1.前MOE老师，20几年丰富的教学经验；
+        <br />2.独特的教学模式，授课风格风趣幽默；
+        <br />3.编写了英文教辅书《better English>和出版了英语故事书。
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">王老师</td>
+      <td>P5</td>
+      <td>华文</td>
+      <td>周一5pm</td>
+      <td>~</td>
+      <td>~</td>
+      <td rowspan="2">
+        1.课程设计别出心裁，新颖独创；
+        <br />2.上课形式活泼；鼓励孩子多说，多练，多交流；
+        <br />3.不拘泥于所谓的"标准答案"。
+      </td>
+      <td rowspan="2">
+        1.拥有新加坡国立大学和国立教育学院双重学位；
+        <br />2.找出每个孩子的闪光点并运用到华文学习中；
+        <br />3.有独特的方法和技巧对华文的写作理解。
+      </td>
+    </tr>
+    <tr>
+      <td>P6</td>
+      <td>华文写作</td>
+      <td>周五7pm</td>
+      <td>~</td>
+      <td>~</td>
+    </tr>
+    <tr>
+      <td>Ms Lim</td>
+      <td>P6</td>
+      <td>科学</td>
+      <td>周六5pm</td>
+      <td>~</td>
+      <td>~</td>
+      <td>
+        1.讲课内容深入浅出，直击要点； <br />2.善于总结知识要点和解题思路；
+        <br />3.帮助学生查缺补漏。
+      </td>
+      <td>
+        1.从事科学教学十多年； <br />2.补习经验功底杂实，逻辑思维严密；
+        <br />3.帮助孩子们找到弱点，重点突出。
+      </td>
+    </tr>
+    <tr>
+      <td>Ms Ng</td>
+      <td>P6</td>
+      <td>数学</td>
+      <td>周一8pm</td>
+      <td>~</td>
+      <td>~</td>
+      <td>
+        1.丰富的数学教学经验； <br />2.擅长归纳、总结题型，抓重点，找思路；
+        <br />3.总结一套数学提升方法。
+      </td>
+      <td>
+        1.毕业于哈佛大学应用数学系； <br />2.热爱教学；
+        <br />3.悉心研究过去十年PSLE和prelim试题，总结了一套数学提升的方法。
+      </td>
+    </tr>
+    <tr>
+      <td>胡老师</td>
+      <td>P6</td>
+      <td>华文冲刺</td>
+      <td>周六12:30pm</td>
+      <td>~</td>
+      <td>~</td>
+      <td>
+        1.丰富的华文教导经验； <br />2.擅长归纳、总结了各种考点；
+        <br />3.帮助学生在学习中循序渐进，举一反三。
+      </td>
+      <td>
+        1.11年MOE政府学校华文教导经验；
+        <br />2.熟悉MOE教材，擅长归纳、总结了各种考点；
+        <br />3.系统归纳出一套实用的教学方法，针对不同学员"因材实教"。
+      </td>
+    </tr>
+  </table>
 </section>
 
 <!-- ============================================ -->
@@ -64,13 +276,13 @@ eleventyNavigation:
 
 <section id="cta">
   <div class="container">
-    <h2 class="title">
-      Get Started
-    </h2>
+    <h2 class="title">Get Started</h2>
     <p>
-      Want to learn and start improving your skills? Come in to take classes and meet our great teachers
+      Want to learn and start improving your skills? Come in to take classes and
+      meet our great teachers
     </p>
     <a href="/contact" class="button-solid">Book A Class</a>
   </div>
-  {% image './src/images/tutoring.jpeg', 'tutoring', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/tutoring.jpeg', 'tutoring', '', 'lazy', '(max-width:
+  400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>

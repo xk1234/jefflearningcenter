@@ -829,7 +829,8 @@ img {
 
 table.schedule {
     border-collapse: collapse;
-    width: 100%;
+    width: 1000px;
+    margin: 0 auto;
     margin-top: 70px;
 }
 table.schedule th, table.schedule td {

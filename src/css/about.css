@@ -329,6 +329,14 @@
     overflow: auto;
 }
 
+.profile-pic > h1 {
+    font-size: 3em;
+}
+
+.profile > h4 {
+    font-size: 1.3em;
+}
+
 .profile > * {
     margin: 10px 0;
 }

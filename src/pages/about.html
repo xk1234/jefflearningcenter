@@ -78,7 +78,355 @@ eleventyNavigation:
       <a href="" class="button-solid">More About Us</a>
     </div>
   </div>
-  <div style="overflow-x: scroll">
+  <div class="profile-grid">
+    <div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>English</h1>
+      </div>
+      <h1 class="name">Ms Ho</h1>
+      <h4>Course Features (课程特点)</h4>
+      <p class="description">
+        1. Rich GEP teaching experience (丰富的GEP教学经验);<br />
+        2. Personalized custom textbooks (个性化定制教材);<br />
+        3. Independent teaching model (独立的教学模式).
+      </p>
+      <h4>Teacher Introduction (老师介绍)</h4>
+      <p class="description">
+        1. The course design is unique and innovative
+        (课程设计别出心裁，新颖独创).<br />
+        2. The teaching style is lively; encourage children to speak more,
+        practice more, and communicate more
+        (上课形式活泼；鼓励孩子多说，多练，多交流).<br />
+        3. Do not stick to the so-called "standard answer"
+        (不拘泥于所谓的"标准答案").
+      </p>
+
+      <div class="teachtable">
+        <table class="teacher">
+          <thead>
+            <tr>
+              <th>Level <br />(年级)</th>
+              <th>Course <br />(课程)</th>
+              <th>Time 1 <br />(时间1)</th>
+              <th>Time 2 <br />(时间2)</th>
+              <th>Time 3 <br />(时间3)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>P2</td>
+              <td>GEP English <br />(GEP英文)</td>
+              <td>Saturday 4:30pm <br />(周六4:30pm)</td>
+              <td>Monday 7pm <br />(周一7pm)</td>
+              <td>Tuesday 5pm <br />(周二5pm)</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>GEP English <br />(GEP英文)</td>
+              <td>Saturday 2:30pm <br />(周六2:30pm)</td>
+              <td>Monday 5pm <br />(周一5pm)</td>
+              <td>Thursday 4:30pm <br />(周四4:30pm)</td>
+            </tr>
+            <!-- ...repeat for the other rows... -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+
+    <div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>Math</h1>
+      </div>
+      <h1 class="name">Ms Lim</h1>
+      <h4>Course Features (课程特点)</h4>
+      <p class="description">
+        1. The teaching content is simple and straightforward, directly hitting
+        the key points (讲课内容深入浅出，直击要点);<br />
+        2. Good at summarizing key points of knowledge and problem-solving
+        thinking (善于总结知识要点和解题思路);<br />
+        3. Help students to identify and fill in their gaps in learning
+        (帮助学生查缺补漏).
+      </p>
+      <h4>Teacher Introduction (老师介绍)</h4>
+      <p class="description">
+        1. Head of Mathematics Department in a well-known tuition center
+        (知名补习中心数学部负责人);<br />
+        2. Rich and solid tutoring experience with rigorous logical thinking
+        (补习经验功底杂实，逻辑思维严密);<br />
+        3. Help children identify their weaknesses, with emphasis on key areas
+        (帮助孩子们找到弱点，重点突出).
+      </p>
+      <table class="teacher">
+        <thead>
+          <tr>
+            <th>Level <br />(年级)</th>
+            <th>Course <br />(课程)</th>
+            <th>Time 1 <br />(时间1)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P2</td>
+            <td>GEP Math <br />(GEP数学)</td>
+            <td>Friday 5pm <br />(周五5pm)</td>
+          </tr>
+          <tr>
+            <td>P3</td>
+            <td>GEP Math <br />(GEP数学)</td>
+            <td>Monday 7pm <br />(周一7pm)</td>
+          </tr>
+          <tr>
+            <td>P4</td>
+            <td>Math <br />(数学)</td>
+            <td>Monday 5pm <br />(周一5pm)</td>
+          </tr>
+          <!-- ...repeat for the other rows... -->
+        </tbody>
+      </table>
+    </div>
+</div>
+
+    <div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>English</h1>
+      </div>
+      <h1 class="name">Raymond</h1>
+      <h4>Course Features (课程特点)</h4>
+      <p class="description">
+        1. The lectures are lively and interesting, motivating children's
+        enthusiasm (讲课生动有趣，带动孩子的积极性). 2. Good at thorough
+        analysis of problems; stimulate children's interest in language
+        (擅长对问题抽丝剥茧的分析；激发孩子对语言的兴趣). 3. Guide children in
+        structured thinking, all-round learning
+        (引导孩子进行结构性思考，全方位的学习).
+      </p>
+      <h4>Teacher Introduction (老师介绍)</h4>
+      <p class="description">
+        1. Former MOE teacher, with over 20 years of rich teaching experience
+        (前MOE老师，20几年丰富的教学经验). 2. Unique teaching model, teaching
+        style is humorous (独特的教学模式，授课风格风趣幽默). 3. Authored the
+        English tutoring book "Better English" and published an English
+        storybook (编写了英文教辅书《Better English》和出版了英语故事书).
+      </p>
+
+      <table class="teacher">
+        <thead>
+          <tr>
+            <th>Level <br />(年级)</th>
+            <th>Course <br />(课程)</th>
+            <th>Time 1 <br />(时间1)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P4</td>
+            <td>English <br />(英文)</td>
+            <td>Wednesday 3pm <br />(周三3pm)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>Chinese</h1>
+      </div>
+      <h1 class="name">王老师</h1>
+      <h4>Course Features (课程特点)</h4>
+      <p class="description">
+        1. The course design is unique and innovative
+        (课程设计别出心裁，新颖独创).<br />
+        2. The teaching style is lively; encourage children to speak more,
+        practice more, and communicate more
+        (上课形式活泼；鼓励孩子多说，多练，多交流).<br />
+        3. Do not stick to the so-called "standard answer"
+        (不拘泥于所谓的“标准答案”).
+      </p>
+      <h4>Teacher Introduction (老师介绍)</h4>
+      <p class="description">
+        1. Holds dual degrees from the National University of Singapore and the
+        National Institute of Education
+        (拥有新加坡国立大学和国立教育学院双重学位).<br />
+        2. Identifies each child's shining points and applies them to learning
+        Chinese (找出每个孩子的闪光点并运用到华文学习中).<br />
+        3. Has unique methods and techniques for understanding Chinese writing
+        (有独特的方法和技巧对华文的写作理解).
+      </p>
+
+      <table class="teacher">
+        <thead>
+          <tr>
+            <th>Level (年级)</th>
+            <th>Course (课程)</th>
+            <th>Time 1 (时间1)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P5</td>
+            <td>Chinese (华文)</td>
+            <td>Monday 5pm (周一5pm)</td>
+          </tr>
+          <tr>
+            <td>P6</td>
+            <td>Chinese Writing (华文写作)</td>
+            <td>Friday 7pm (周五7pm)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+    <div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>Science</h1>
+      </div>
+      <h1 class="name">Ms Lim</h1>
+      <h4>Course Features (课程特点)</h4>
+      <p class="description">
+        1. The lecture content is easy to understand and hits the key points
+        (讲课内容深入浅出，直击要点).<br />
+        2. Good at summarizing knowledge points and problem-solving ideas
+        (善于总结知识要点和解题思路).<br />
+        3. Helps students to make up for deficiencies (帮助学生查缺补漏).
+      </p>
+      <h4>Teacher Introduction (老师介绍)</h4>
+      <p class="description">
+        1. Has been engaged in science teaching for more than ten years
+        (从事科学教学十多年).<br />
+        2. Tutoring experience is solid, with rigorous logical thinking
+        (补习经验功底杂实，逻辑思维严密).<br />
+        3. Helps children find weaknesses and emphasizes key points
+        (帮助孩子们找到弱点，重点突出).
+      </p>
+      <table class="teacher">
+        <tr>
+          <th>Level (年级)</th>
+          <th>Course (课程)</th>
+          <th>Time 1 (时间1)</th>
+        </tr>
+        <tr>
+          <td>P6</td>
+          <td>Science (科学)</td>
+          <td>Saturday 5pm (周六5pm)</td>
+        </tr>
+      </table>
+    </div>
+</div>
+    <div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUAAAD///+UlJS0tLRGRkatra329vaXl5fw8PC9vb24uLjr6+tzc3Pi4uKenp75+fl/f387OzuoqKgPDw9qamrMzMxAQEBcXFzS0tLExMQoKCjZ2dlhYWF7e3uMjIxUVFQWFhYnJycZGRlDQ0NWVlYeHh4yMjLhhv2/AAAGeklEQVR4nO2d6ZKiShBGKWxAVltxt11Gbd7/Ea+KXjdsavmSoog6Pydi2jwh1pqZOKyCeDIKXNMIsij1K2Sct39ZjJeOqeTbUVxjmH7rDlKZ7eIPwzjRHR6E4eKT4Uh3aDDGfpWhP9MdF5LJu2H/n+6gsPReDVPdEcEJng37uuMhwHs09Dv2iJaED4adGmTuxP8berpDIeLrZtjFH2GJdzXsxkqmEv9i2L2J4k5wMTR/sf0HF0PdQZDSOxmGuoMg5XgyHOsOgpa+w8zd0XMxcWLdIRCTnRy7TeJ0Z2NfzdQJdIdAzN5xdYdATN55Q8cadgBraD7W0HysoflYQ/OxhlB+i+l0Omz4kqQpw5kbpnF5NTvop/NsnTf0wY0YFu6cvRP3jg18dhOGyapC73ptmf2Sfzy1YZ5VZfE8sPiiDYDa0K3xuzgSn2dSGs7Ser8zGWEMpIYjPr8T6ZQuCjrDJecXWEJ4AUZlOBbxOxERxUFm+C0oyNicJhAqw42wIGMrkkiIDGUEyRQpDBMpQcZobokIDLeSgkSJPXjDnGMd8wmKSQNvWLWP4GYIDwdvKDfK3CAYbdCGSyVBxvDPFPovLuol/mYPDghtKD+O3oDn94ANP+/nuUHvM7CGM3VB+JeINZzUC9QDPoWDGuYIQQZOD4EaZhBDcJoW1FBoW/8Z7PEb0nCKEQQXYCEN1RZsd7B52UhD5fXMDWBMWMMByhBaPQA03KMEsfMF0FD0APEz0OMMoCFqoAEPNUBDzHx/BjrnAw0jmKG/w0WFNIQsu0uQF25AQ6UjqGcKXFRIQ8Dut+WGwO+wpU8pbNHGGDKBAWjowQShVa1AQxdm2NYZX/xW9BPQk2+g4RfMEHoHhdw9wQw3wKCghqBjGsYOwKCghr362PkAxoQ1/AEJLoAxYQ33Cre/j2BvgqHnpZhVzQCbkgk1xJxjgFMysDczkMf0BxoS2DCoj78WdHU51nAPODKFTvcO/A5Y/TQK3iAAnamg/CXCu+WgDVU3GPiEGnj+iuJpDXRJegFuWCgJEjRAwOcgqTynFCmmBNmX8mff0LPuGxQZtNI/xS1BMDRZ0H05QZp2RySG+Vs3Xx6I+sbR5OrLKFI1xqOqKBE94h+AdxR3yKqCxA5tYoL05yt0lV0i8yJl0zjC2rUl75Pqk/amJK2wXHPt+T3aomfiKtmgdje1oPsFllBXOu82f07/EX4v8UoD1eqz8MPDukIfWFTSSMeB/Dh6HXXiaN1Qx8bmukYcks0onMwnC89dN9l82nb+MB9raD7W0HysoflYQ/OxhuZjDc3HGpqPNTQfa2g+1tB8rCGIf8Pt+DsYeReyTTI7FLtmPpncsEg23jyturvw41UYfJOkXzxBZ7g8BiFPfYI/8caU9080hstNmAplKcbzjKqrMN5w604kUzBX3pigrzDWMF9HktlCVwbzAP3EAg2HAaaKNO5BM09QhkUGq3o64Ye4+zeM4QZY5Xwl9kCNeACGsxCuV5JudurRqRtukE/nK4NIfdxRMyz4O1rLMlcddlQMh1SP5zPpWpNhQ34XR5W0MFnDHFd9z8NKfoUuaejCekLxspBd0EkZHinHz49I1mLIGDb7gN6Re8GAuOGXVJo6BpnvQ/j/4PpdySBRQStq2NwUUY0v/KQKGuJX2MKIrnGEDOUqRdAITv8ihr+tEGRMbBUnYtgSQcECKQFDYKcrVUQ2x/yG9BslfkQaSXEb4jpbIhCYF7kNQX1LUPAPqLyGutain/DRhmoV2hRw7zQ4Dds0zJQMwIa6fSrg/SXyGaI6QCHhHU75DNs2zpzpcxb18RlqObWog3Nhw2WYq12ZEcH5Q+QybN9ccYZzvuAyPOiWqYSzfySXIa6rJZKeNbSG1lA71tAaWkP9WENr2H5Dzld58+0twl77iDgbKttMdvOxhuZjDc3HGpqPNTQfa2g+3TckaBHeKnIn0x0CMYVD2f21Dcwc7Bui24fr+LQNYLUTOTSd3ttD7LBuDzVD5uDf69Iq3JMho6qhbgXx2RD7Hrd28cPOhkyqEsUMVqUh+D1nLSJhpSHRmzNaQP9m2NVZ//LCmzKtcq47FhISdjfkvcYxihl7NOzgymbIng15rxuNYcZeDTs28Sfs3ZDFHdplPLw27ClFHfo6bI0kjwm/z0n4fhfOpX6eq0DfygyiJl/MgGfoviZsVxRS9CdZciDo10TMrvhxo4oKyf8AvHZTeZbtlIEAAAAASUVORK5CYII="
+          alt="Profile picture"
+        />
+        <h1>Math</h1>
+      </div>
+      <h1 class="name">Ms Ng</h1>
+      <h4>Course Features (课程特点)</h4>
+      <p class="description">
+        1. Rich experience in math teaching (丰富的数学教学经验)；<br />
+        2. Good at summarizing and concluding problem types, focusing on key
+        points, and finding thinking routes
+        (擅长归纳、总结题型，抓重点，找思路)；<br />
+        3. Summarized a set of methods to improve mathematics
+        (总结一套数学提升方法).
+      </p>
+      <h4>Teacher Introduction (老师介绍)</h4>
+      <p class="description">
+        1. Graduated from the Department of Applied Mathematics at Harvard
+        University (毕业于哈佛大学应用数学系)；<br />
+        2. Passionate about teaching (热爱教学)；<br />
+        3. Carefully studied the past ten years' PSLE and prelim exam questions,
+        and summarized a set of methods to improve mathematics
+        (悉心研究过去十年PSLE和prelim试题，总结了一套数学提升的方法).
+      </p>
+      <table class="teacher">
+        <tr>
+          <th>Level (年级)</th>
+          <th>Course (课程)</th>
+          <th>Time 1 (时间1)</th>
+        </tr>
+        <tr>
+          <td>P6</td>
+          <td>Math (数学)</td>
+          <td>Monday 8pm (周一8pm)</td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+    <div class="grid-item">
+        <div class="profile">
+            <div class="profile-pic">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUAAAD///+UlJS0tLRGRkatra329vaXl5fw8PC9vb24uLjr6+tzc3Pi4uKenp75+fl/f387OzuoqKgPDw9qamrMzMxAQEBcXFzS0tLExMQoKCjZ2dlhYWF7e3uMjIxUVFQWFhYnJycZGRlDQ0NWVlYeHh4yMjLhhv2/AAAGeklEQVR4nO2d6ZKiShBGKWxAVltxt11Gbd7/Ea+KXjdsavmSoog6Pydi2jwh1pqZOKyCeDIKXNMIsij1K2Sct39ZjJeOqeTbUVxjmH7rDlKZ7eIPwzjRHR6E4eKT4Uh3aDDGfpWhP9MdF5LJu2H/n+6gsPReDVPdEcEJng37uuMhwHs09Dv2iJaED4adGmTuxP8berpDIeLrZtjFH2GJdzXsxkqmEv9i2L2J4k5wMTR/sf0HF0PdQZDSOxmGuoMg5XgyHOsOgpa+w8zd0XMxcWLdIRCTnRy7TeJ0Z2NfzdQJdIdAzN5xdYdATN55Q8cadgBraD7W0HysoflYQ/OxhlB+i+l0Omz4kqQpw5kbpnF5NTvop/NsnTf0wY0YFu6cvRP3jg18dhOGyapC73ptmf2Sfzy1YZ5VZfE8sPiiDYDa0K3xuzgSn2dSGs7Ser8zGWEMpIYjPr8T6ZQuCjrDJecXWEJ4AUZlOBbxOxERxUFm+C0oyNicJhAqw42wIGMrkkiIDGUEyRQpDBMpQcZobokIDLeSgkSJPXjDnGMd8wmKSQNvWLWP4GYIDwdvKDfK3CAYbdCGSyVBxvDPFPovLuol/mYPDghtKD+O3oDn94ANP+/nuUHvM7CGM3VB+JeINZzUC9QDPoWDGuYIQQZOD4EaZhBDcJoW1FBoW/8Z7PEb0nCKEQQXYCEN1RZsd7B52UhD5fXMDWBMWMMByhBaPQA03KMEsfMF0FD0APEz0OMMoCFqoAEPNUBDzHx/BjrnAw0jmKG/w0WFNIQsu0uQF25AQ6UjqGcKXFRIQ8Dut+WGwO+wpU8pbNHGGDKBAWjowQShVa1AQxdm2NYZX/xW9BPQk2+g4RfMEHoHhdw9wQw3wKCghqBjGsYOwKCghr362PkAxoQ1/AEJLoAxYQ33Cre/j2BvgqHnpZhVzQCbkgk1xJxjgFMysDczkMf0BxoS2DCoj78WdHU51nAPODKFTvcO/A5Y/TQK3iAAnamg/CXCu+WgDVU3GPiEGnj+iuJpDXRJegFuWCgJEjRAwOcgqTynFCmmBNmX8mff0LPuGxQZtNI/xS1BMDRZ0H05QZp2RySG+Vs3Xx6I+sbR5OrLKFI1xqOqKBE94h+AdxR3yKqCxA5tYoL05yt0lV0i8yJl0zjC2rUl75Pqk/amJK2wXHPt+T3aomfiKtmgdje1oPsFllBXOu82f07/EX4v8UoD1eqz8MPDukIfWFTSSMeB/Dh6HXXiaN1Qx8bmukYcks0onMwnC89dN9l82nb+MB9raD7W0HysoflYQ/OxhuZjDc3HGpqPNTQfa2g+1tB8rCGIf8Pt+DsYeReyTTI7FLtmPpncsEg23jyturvw41UYfJOkXzxBZ7g8BiFPfYI/8caU9080hstNmAplKcbzjKqrMN5w604kUzBX3pigrzDWMF9HktlCVwbzAP3EAg2HAaaKNO5BM09QhkUGq3o64Ye4+zeM4QZY5Xwl9kCNeACGsxCuV5JudurRqRtukE/nK4NIfdxRMyz4O1rLMlcddlQMh1SP5zPpWpNhQ34XR5W0MFnDHFd9z8NKfoUuaejCekLxspBd0EkZHinHz49I1mLIGDb7gN6Re8GAuOGXVJo6BpnvQ/j/4PpdySBRQStq2NwUUY0v/KQKGuJX2MKIrnGEDOUqRdAITv8ihr+tEGRMbBUnYtgSQcECKQFDYKcrVUQ2x/yG9BslfkQaSXEb4jpbIhCYF7kNQX1LUPAPqLyGutain/DRhmoV2hRw7zQ4Dds0zJQMwIa6fSrg/SXyGaI6QCHhHU75DNs2zpzpcxb18RlqObWog3Nhw2WYq12ZEcH5Q+QybN9ccYZzvuAyPOiWqYSzfySXIa6rJZKeNbSG1lA71tAaWkP9WENr2H5Dzld58+0twl77iDgbKttMdvOxhuZjDc3HGpqPNTQfa2g+3TckaBHeKnIn0x0CMYVD2f21Dcwc7Bui24fr+LQNYLUTOTSd3ttD7LBuDzVD5uDf69Iq3JMho6qhbgXx2RD7Hrd28cPOhkyqEsUMVqUh+D1nLSJhpSHRmzNaQP9m2NVZ//LCmzKtcq47FhISdjfkvcYxihl7NOzgymbIng15rxuNYcZeDTs28Sfs3ZDFHdplPLw27ClFHfo6bI0kjwm/z0n4fhfOpX6eq0DfygyiJl/MgGfoviZsVxRS9CdZciDo10TMrvhxo4oKyf8AvHZTeZbtlIEAAAAASUVORK5CYII="
+                alt="Profile picture"
+              />
+              <h1>Math</h1>
+            </div>
+            <h1 class="name">Ms Ng</h1>
+            <h4>Course Features (课程特点)</h4>
+            <p class="description">
+              1. Rich experience in Chinese teaching (丰富的华文教导经验)；<br />
+              2. Good at summarizing and concluding various test points
+              (擅长归纳、总结了各种考点)；<br />
+              3. Help students to learn in an orderly manner, and learn by analogy
+              (帮助学生在学习中循序渐进，举一反三)。
+            </p>
+            <h4>Teacher Introduction (老师介绍)</h4>
+            <p class="description">
+              1. 11 years of MOE government school Chinese teaching experience
+              (11年MOE政府学校华文教导经验)；<br />
+              2. Familiar with MOE textbooks, good at summarizing and concluding
+              various test points (熟悉MOE教材，擅长归纳、总结了各种考点)；<br />
+              3. Systematically summarized a set of practical teaching methods,
+              teaching students in accordance with their aptitude ("因材实教").
+            </p>
+      
+            <table class="teacher">
+              <tr>
+                <th>Grade (级别)</th>
+                <th>Subject (科目)</th>
+                <th>Day and Time (上课时间)</th>
+              </tr>
+              <tr>
+                <td>P6</td>
+                <td>Chinese Sprint (华文冲刺)</td>
+                <td>Saturday 12:30pm (周六12:30pm)</td>
+              </tr>
+            </table>
+          </div>
+    </div>
+
+  </div>
+  <!-- <div style="overflow-x: scroll">
     <table class="schedule">
       <tr>
         <th>授课老师</th>
@@ -269,7 +617,7 @@ eleventyNavigation:
         </td>
       </tr>
     </table>
-  </div>
+  </div> -->
 </section>
 
 <!-- ============================================ -->

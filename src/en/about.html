@@ -1,0 +1,419 @@
+---
+layout: "base.html"
+description: "Our tuition center provides education to the kids in a fun and enjoyable way"
+metaTitle: "Jeff Tuition Center - About"
+tagTitle: "About"
+preloadImg: "/images/cabinets2-1920w.webp"
+preloadCSS: "/css/about.css"
+eleventyNavigation:
+  key: About Us
+  parent: English
+  order: 200
+---
+
+<!-- Enter html code below -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  {% image './src/images/book.jpg', 'book', '', 'lazy', '(max-width: 850px)
+  850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/learningbg3.jpeg', 'book', 'cs-picture
+      cs-picture1', 'lazy'%} {% image './src/images/boyreading.jpeg', 'study',
+      'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h2 class="cs-title">Our Story</h2>
+      <p class="cs-text">
+        At Jeff Tuition, we believe in the potential of every child. We empower
+        students with a deep-rooted passion for learning and help them achieve
+        their full potential. Our teachers hold themselves accountable to make
+        each and every lesson a solution-driven experience by keeping track of
+        all student progress on individualized plans, while providing targeted
+        one-on-one interventions as needed.
+      </p>
+      <p class="cs-text">
+        Our tutors are experts at teaching. With our comprehensive curriculum
+        and easy-to-follow lesson plans, your child will be on the path to
+        success in no time. We use games and quizzes to make learning fun, even
+        for those who hate doing their homework.
+      </p>
+      <p class="cs-text">
+        At the end of the day, our mission is simple -- to help every child
+        achieve their full potential. Join us on this exciting journey of
+        learning and discovery!
+      </p>
+      <div class="cs-flex-group">
+        <p class="cs-flex-p">
+          Our expert teachers will guide your child to success in all school
+          subjects and help them discover their true passion. It’s never too
+          late or too early to start planning for your child’s future.
+        </p>
+        <span class="cs-name">Fiona Wang</span>
+        <span class="cs-job">Founder</span>
+        <img
+          class="cs-quote-icon"
+          loading="lazy"
+          decoding="async"
+          src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
+          alt="gavel"
+          width="136"
+          height="77"
+        />
+      </div>
+      <a href="" class="button-solid">More About Us</a>
+    </div>
+  </div>
+  <div class="profile-grid">
+    <div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>English</h1>
+      </div>
+      <h1 class="name">Ms Ho</h1>
+      <h4>Course Features</h4>
+      <p class="description">
+        1. Rich GEP teaching experience.<br />
+        2. Personalized custom textbooks.<br />
+        3. Independent teaching model.
+      </p>
+      <h4>Teacher Introduction</h4>
+      <p class="description">
+        1. The course design is unique and innovative.<br />
+        2. The teaching style is lively; encourage children to speak more,
+        practice more, and communicate more.<br />
+        3. Do not stick to the so-called "standard answer".
+      </p>
+
+      <div class="teachtable">
+        <table class="teacher">
+          <thead>
+            <tr>
+              <th>Level <br /></th>
+              <th>Course <br /></th>
+              <th>Time 1 <br /></th>
+              <th>Time 2 <br /></th>
+              <th>Time 3 <br /></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>P2</td>
+              <td>GEP English <br /></td>
+              <td>Saturday 4:30pm <br /></td>
+              <td>Monday 7pm <br /></td>
+              <td>Tuesday 5pm <br /></td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>GEP English <br /></td>
+              <td>Saturday 2:30pm <br /></td>
+              <td>Monday 5pm <br /></td>
+              <td>Thursday 4:30pm <br /></td>
+            </tr>
+            <!-- ...repeat for the other rows... -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>
+
+    <div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>Math</h1>
+      </div>
+      <h1 class="name">Ms Lim</h1>
+      <h4>Course Features</h4>
+      <p class="description">
+        1. The teaching content is simple and straightforward, directly hitting
+        the key points.<br />
+        2. Good at summarizing key points of knowledge and problem-solving
+        thinking.<br />
+        3. Help students to identify and fill in their gaps in learning.
+      </p>
+      <h4>Teacher Introduction</h4>
+      <p class="description">
+        1. Head of Mathematics Department in a well-known tuition center.<br />
+        2. Rich and solid tutoring experience with rigorous logical thinking.<br />
+        3. Help children identify their weaknesses, with emphasis on key areas.
+      </p>
+      <table class="teacher">
+        <thead>
+          <tr>
+            <th>Level <br /></th>
+            <th>Course <br /></th>
+            <th>Time 1 <br /></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P2</td>
+            <td>GEP Math <br /></td>
+            <td>Friday 5pm <br /></td>
+          </tr>
+          <tr>
+            <td>P3</td>
+            <td>GEP Math <br /></td>
+            <td>Monday 7pm <br /></td>
+          </tr>
+          <tr>
+            <td>P4</td>
+            <td>Math <br /></td>
+            <td>Monday 5pm <br /></td>
+          </tr>
+          <!-- ...repeat for the other rows... -->
+        </tbody>
+      </table>
+    </div>
+</div>
+
+    <div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>English</h1>
+      </div>
+      <h1 class="name">Raymond</h1>
+      <h4>Course Features</h4>
+      <p class="description">
+        1. The lectures are lively and interesting, motivating children's
+        enthusiasm. 2. Good at thorough
+        analysis of problems; stimulate children's interest in language. 3. Guide children in
+        structured thinking, all-round learning.
+      </p>
+      <h4>Teacher Introduction</h4>
+      <p class="description">
+        1. Former MOE teacher, with over 20 years of rich teaching experience. 2. Unique teaching model, teaching
+        style is humorous. 3. Authored the
+        English tutoring book "Better English" and published an English
+        storybook.
+      </p>
+
+      <table class="teacher">
+        <thead>
+          <tr>
+            <th>Level <br /></th>
+            <th>Course <br /></th>
+            <th>Time 1 <br /></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P4</td>
+            <td>English <br /></td>
+            <td>Wednesday 3pm <br /></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>Chinese</h1>
+      </div>
+      <h1 class="name">王老师</h1>
+      <h4>Course Features</h4>
+      <p class="description">
+        1. The course design is unique and innovative.<br />
+        2. The teaching style is lively; encourage children to speak more,
+        practice more, and communicate more.<br />
+        3. Do not stick to the so-called "standard answer".
+      </p>
+      <h4>Teacher Introduction</h4>
+      <p class="description">
+        1. Holds dual degrees from the National University of Singapore and the
+        National Institute of Education.<br />
+        2. Identifies each child's shining points and applies them to learning.<br />
+        3. Has unique methods and techniques for understanding Chinese writing.
+      </p>
+
+      <table class="teacher">
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Course</th>
+            <th>Time 1</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>P5</td>
+            <td>Chinese</td>
+            <td>Monday 5pm</td>
+          </tr>
+          <tr>
+            <td>P6</td>
+            <td>Chinese Writing</td>
+            <td>Friday 7pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+    <div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>Science</h1>
+      </div>
+      <h1 class="name">Ms Lim</h1>
+      <h4>Course Features</h4>
+      <p class="description">
+        1. The lecture content is easy to understand and hits the key points.<br />
+        2. Good at summarizing knowledge points and problem-solving ideas.<br />
+        3. Helps students to make up for deficiencies.
+      </p>
+      <h4>Teacher Introduction</h4>
+      <p class="description">
+        1. Has been engaged in science teaching for more than ten years.<br />
+        2. Tutoring experience is solid, with rigorous logical thinking.<br />
+        3. Helps children find weaknesses and emphasizes key points.
+      </p>
+      <table class="teacher">
+        <tr>
+          <th>Level</th>
+          <th>Course</th>
+          <th>Time 1</th>
+        </tr>
+        <tr>
+          <td>P6</td>
+          <td>Science</td>
+          <td>Saturday 5pm</td>
+        </tr>
+      </table>
+    </div>
+</div>
+    <div class="grid-item">
+    <div class="profile">
+      <div class="profile-pic">
+        <img
+          src="data:image/png;base64,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"
+          alt="Profile picture"
+        />
+        <h1>Math</h1>
+      </div>
+      <h1 class="name">Ms Ng</h1>
+      <h4>Course Features</h4>
+      <p class="description">
+        1. Rich experience in math teaching.<br />
+        2. Good at summarizing and concluding problem types, focusing on key
+        points, and finding thinking routes.<br />
+        3. Summarized a set of methods to improve mathematics.
+      </p>
+      <h4>Teacher Introduction</h4>
+      <p class="description">
+        1. Graduated from the Department of Applied Mathematics at Harvard
+        University<br />
+        2. Passionate about teaching<br />
+        3. Carefully studied the past ten years' PSLE and prelim exam questions,
+        and summarized a set of methods to improve mathematics.
+      </p>
+      <table class="teacher">
+        <tr>
+          <th>Level </th>
+          <th>Course </th>
+          <th>Time 1 </th>
+        </tr>
+        <tr>
+          <td>P6</td>
+          <td>Math </td>
+          <td>Monday 8pm</td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+    <div class="grid-item">
+        <div class="profile">
+            <div class="profile-pic">
+              <img
+                src="data:image/png;base64,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"
+                alt="Profile picture"
+              />
+              <h1>Chinese</h1>
+            </div>
+            <h1 class="name">胡老师</h1>
+            <h4>Course Features</h4>
+            <p class="description">
+              1. Rich experience in Chinese teaching <br />
+              2. Good at summarizing and concluding various test points<br />
+              3. Help students to learn in an orderly manner, and learn by analogy
+            </p>
+            <h4>Teacher Introduction</h4>
+            <p class="description">
+              1. 11 years of MOE government school Chinese teaching experience
+              <br />
+              2. Familiar with MOE textbooks, good at summarizing and concluding
+              various test points<br />
+              3. Systematically summarized a set of practical teaching methods,
+              teaching students in accordance with their aptitude.
+            </p>
+      
+            <table class="teacher">
+              <tr>
+                <th>Grade</th>
+                <th>Subject</th>
+                <th>Day and Time</th>
+              </tr>
+              <tr>
+                <td>P6</td>
+                <td>Chinese Sprint</td>
+                <td>Saturday 12:30pm</td>
+              </tr>
+            </table>
+          </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">Get Started</h2>
+    <p>
+      Want to learn and start improving your skills? Come in to take classes and
+      meet our great teachers
+    </p>
+    <a href="/contact" class="button-solid">Book A Class</a>
+  </div>
+  {% image './src/images/tutoring.jpeg', 'tutoring', '', 'lazy', '(max-width:
+  400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>

@@ -3,6 +3,8 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const { DateTime } = require('luxon');
 const Image = require('@11ty/eleventy-img');
 const path = require('path');
+const i18n = require('eleventy-plugin-i18n');
+const translations = require('./src/_data/i18n');
 
 // allows the use of {% image... %} to create responsive, optimised images
 // CHANGE DEFAULT MEDIA QUERIES AND WIDTHS
@@ -51,6 +53,12 @@ async function imageShortcode(src, alt, className, loading, sizes = '(max-width:
 module.exports = function (eleventyConfig) {
   // adds the navigation plugin for easy navs
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  eleventyConfig.addPlugin(i18n, {
+    translations,
+    fallbackLocales: {
+      '*': 'en'
+    }
+  });
 
   // allows css, assets, robots.txt and CMS config files to be passed into /public
   eleventyConfig.addPassthroughCopy('./src/css/**/*.css');
@@ -73,6 +81,22 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('postDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
+
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function (err, bs) {
+        bs.addMiddleware('*', (req, res) => {
+          if (req.url === '/') {
+            res.writeHead(302, {
+              location: '/en-GB/'
+            });
+            res.end();
+          }
+        });
+      }
+    }
+  });
+
 
   return {
     dir: {
